@@ -41,7 +41,7 @@ do_stop () {
 	$PATH_BIN -xg
         retval=$?
          echo
-	[ $RETVAL = 0 ] && rm -f ${LOCKFILE}
+	[ $retval = 0 ] && rm -f ${LOCKFILE}
 }
 
 do_status () {
